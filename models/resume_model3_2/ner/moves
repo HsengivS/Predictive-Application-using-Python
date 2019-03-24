@@ -1,0 +1,128 @@
+Å´transitions⁄[
+  {
+    "clas":0,
+    "move":1,
+    "label":"hard skill",
+    "name":"B-hard skill"
+  },
+  {
+    "clas":1,
+    "move":2,
+    "label":"hard skill",
+    "name":"I-hard skill"
+  },
+  {
+    "clas":2,
+    "move":3,
+    "label":"hard skill",
+    "name":"L-hard skill"
+  },
+  {
+    "clas":3,
+    "move":4,
+    "label":"hard skill",
+    "name":"U-hard skill"
+  },
+  {
+    "clas":4,
+    "move":1,
+    "label":"designation",
+    "name":"B-designation"
+  },
+  {
+    "clas":5,
+    "move":2,
+    "label":"designation",
+    "name":"I-designation"
+  },
+  {
+    "clas":6,
+    "move":3,
+    "label":"designation",
+    "name":"L-designation"
+  },
+  {
+    "clas":7,
+    "move":4,
+    "label":"designation",
+    "name":"U-designation"
+  },
+  {
+    "clas":8,
+    "move":1,
+    "label":"name",
+    "name":"B-name"
+  },
+  {
+    "clas":9,
+    "move":2,
+    "label":"name",
+    "name":"I-name"
+  },
+  {
+    "clas":10,
+    "move":3,
+    "label":"name",
+    "name":"L-name"
+  },
+  {
+    "clas":11,
+    "move":4,
+    "label":"name",
+    "name":"U-name"
+  },
+  {
+    "clas":12,
+    "move":1,
+    "label":"soft skill",
+    "name":"B-soft skill"
+  },
+  {
+    "clas":13,
+    "move":2,
+    "label":"soft skill",
+    "name":"I-soft skill"
+  },
+  {
+    "clas":14,
+    "move":3,
+    "label":"soft skill",
+    "name":"L-soft skill"
+  },
+  {
+    "clas":15,
+    "move":4,
+    "label":"soft skill",
+    "name":"U-soft skill"
+  },
+  {
+    "clas":16,
+    "move":1,
+    "label":"location",
+    "name":"B-location"
+  },
+  {
+    "clas":17,
+    "move":2,
+    "label":"location",
+    "name":"I-location"
+  },
+  {
+    "clas":18,
+    "move":3,
+    "label":"location",
+    "name":"L-location"
+  },
+  {
+    "clas":19,
+    "move":4,
+    "label":"location",
+    "name":"U-location"
+  },
+  {
+    "clas":20,
+    "move":5,
+    "label":"",
+    "name":"O"
+  }
+]

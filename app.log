@@ -1,0 +1,661 @@
+2019-03-24 21:20:39,107 - WARNING -  * Debugger is active!
+2019-03-24 21:20:39,108 - INFO -  * Debugger PIN: 119-716-334
+2019-03-24 21:21:35,475 - INFO - 127.0.0.1 - - [24/Mar/2019 21:21:35] "GET / HTTP/1.1" 200 -
+2019-03-24 21:21:39,304 - INFO - 127.0.0.1 - - [24/Mar/2019 21:21:39] "GET /smodelIn HTTP/1.1" 302 -
+2019-03-24 21:21:39,320 - INFO - 127.0.0.1 - - [24/Mar/2019 21:21:39] "GET /token_end_flash HTTP/1.1" 200 -
+2019-03-24 21:22:16,901 - INFO - 42.111.138.238 - - [24/Mar/2019 21:22:16] "GET / HTTP/1.1" 200 -
+2019-03-24 21:22:17,135 - INFO - 42.111.138.238 - - [24/Mar/2019 21:22:17] "GET /static/css/master.css HTTP/1.1" 200 -
+2019-03-24 21:22:21,180 - INFO - 42.111.138.238 - - [24/Mar/2019 21:22:21] "GET /favicon.ico HTTP/1.1" 404 -
+2019-03-24 21:22:23,905 - INFO - 42.111.138.238 - - [24/Mar/2019 21:22:23] "GET /smodelIn HTTP/1.1" 200 -
+2019-03-24 21:22:36,093 - INFO - 42.111.138.238 - - [24/Mar/2019 21:22:36] "GET /tmodelIn HTTP/1.1" 200 -
+2019-03-24 21:24:04,872 - INFO - 42.111.138.238 - - [24/Mar/2019 21:24:04] "GET /smodelIn HTTP/1.1" 200 -
+2019-03-24 21:24:11,271 - INFO - 42.111.138.238 - - [24/Mar/2019 21:24:11] "GET /smodelIn HTTP/1.1" 200 -
+2019-03-24 21:24:33,031 - INFO - 42.111.138.238 - - [24/Mar/2019 21:24:33] "GET /smodelIn HTTP/1.1" 200 -
+2019-03-24 21:26:54,985 - INFO - 127.0.0.1 - - [24/Mar/2019 21:26:54] "GET / HTTP/1.1" 200 -
+2019-03-24 21:26:57,610 - INFO - 127.0.0.1 - - [24/Mar/2019 21:26:57] "GET /smodelIn HTTP/1.1" 302 -
+2019-03-24 21:26:57,633 - INFO - 127.0.0.1 - - [24/Mar/2019 21:26:57] "GET /token_end_flash HTTP/1.1" 200 -
+2019-03-24 21:27:40,275 - INFO - 127.0.0.1 - - [24/Mar/2019 21:27:40] "GET /smodelIn HTTP/1.1" 200 -
+2019-03-24 21:27:58,966 - INFO - 127.0.0.1 - - [24/Mar/2019 21:27:58] "GET /tmodelIn HTTP/1.1" 200 -
+2019-03-24 21:28:03,146 - INFO - 127.0.0.1 - - [24/Mar/2019 21:28:03] "GET /tmodelIn HTTP/1.1" 200 -
+2019-03-24 21:28:44,800 - ERROR - ** AT END POINT /getDetails **
+Traceback (most recent call last):
+  File "app.py", line 183, in tmodel_out
+    no_of_topics = int(request.form.get('no_of_topics'))
+ValueError: invalid literal for int() with base 10: '/'
+2019-03-24 21:28:44,801 - ERROR - Function no_of_topics = int(request.form.get('no_of_topics')) raised <class 'ValueError'> (Inappropriate argument value (of correct type).)
+2019-03-24 21:28:44,824 - INFO - adding document #0 to Dictionary(0 unique tokens: [])
+2019-03-24 21:28:44,824 - INFO - built Dictionary(0 unique tokens: []) from 1 documents (total 0 corpus positions)
+2019-03-24 21:28:44,824 - ERROR - ** AT END POINT /getDetails **
+Traceback (most recent call last):
+  File "/home/vignesh-smvp/Documents/Predictive Application/topic_modelling.py", line 19, in get_topic_modelling
+    id2word=dictionary, passes=100)
+  File "/home/vignesh-smvp/env/lib/python3.6/site-packages/gensim/models/ldamodel.py", line 441, in __init__
+    raise ValueError("cannot compute LDA over an empty collection (no terms)")
+ValueError: cannot compute LDA over an empty collection (no terms)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "app.py", line 191, in tmodel_out
+    count=1)
+  File "/home/vignesh-smvp/Documents/Predictive Application/topic_modelling.py", line 26, in get_topic_modelling
+    passes=100)
+  File "/home/vignesh-smvp/env/lib/python3.6/site-packages/gensim/models/ldamodel.py", line 441, in __init__
+    raise ValueError("cannot compute LDA over an empty collection (no terms)")
+ValueError: cannot compute LDA over an empty collection (no terms)
+2019-03-24 21:28:44,838 - ERROR - Function count=1) raised <class 'ValueError'> (Inappropriate argument value (of correct type).)
+2019-03-24 21:28:44,839 - INFO - 127.0.0.1 - - [24/Mar/2019 21:28:44] "POST /tmodelOut HTTP/1.1" 200 -
+2019-03-24 21:29:14,365 - ERROR - ** AT END POINT /getDetails **
+Traceback (most recent call last):
+  File "app.py", line 183, in tmodel_out
+    no_of_topics = int(request.form.get('no_of_topics'))
+ValueError: invalid literal for int() with base 10: '/'
+2019-03-24 21:29:14,366 - ERROR - Function no_of_topics = int(request.form.get('no_of_topics')) raised <class 'ValueError'> (Inappropriate argument value (of correct type).)
+2019-03-24 21:29:14,366 - INFO - adding document #0 to Dictionary(0 unique tokens: [])
+2019-03-24 21:29:14,366 - INFO - built Dictionary(2 unique tokens: ['fbfh', 'xcdgedg']) from 1 documents (total 2 corpus positions)
+2019-03-24 21:29:14,366 - INFO - using symmetric alpha at 1.0
+2019-03-24 21:29:14,367 - INFO - using symmetric eta at 1.0
+2019-03-24 21:29:14,367 - INFO - using serial LDA version on this node
+2019-03-24 21:29:14,367 - INFO - running online (multi-pass) LDA training, 1 topics, 100 passes over the supplied corpus of 1 documents, updating model once every 1 documents, evaluating perplexity every 1 documents, iterating 50x with a convergence threshold of 0.001000
+2019-03-24 21:29:14,367 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,369 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,370 - INFO - PROGRESS: pass 0, at document #1/1
+2019-03-24 21:29:14,371 - DEBUG - updating topics
+2019-03-24 21:29:14,372 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,372 - INFO - topic diff=0.007326, rho=1.000000
+2019-03-24 21:29:14,373 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,375 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,375 - INFO - PROGRESS: pass 1, at document #1/1
+2019-03-24 21:29:14,375 - DEBUG - updating topics
+2019-03-24 21:29:14,376 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,376 - INFO - topic diff=0.000000, rho=0.577350
+2019-03-24 21:29:14,376 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,377 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,377 - INFO - PROGRESS: pass 2, at document #1/1
+2019-03-24 21:29:14,379 - DEBUG - updating topics
+2019-03-24 21:29:14,380 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,380 - INFO - topic diff=0.000000, rho=0.500000
+2019-03-24 21:29:14,381 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,382 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,382 - INFO - PROGRESS: pass 3, at document #1/1
+2019-03-24 21:29:14,383 - DEBUG - updating topics
+2019-03-24 21:29:14,383 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,384 - INFO - topic diff=0.000000, rho=0.447214
+2019-03-24 21:29:14,384 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,385 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,385 - INFO - PROGRESS: pass 4, at document #1/1
+2019-03-24 21:29:14,385 - DEBUG - updating topics
+2019-03-24 21:29:14,386 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,386 - INFO - topic diff=0.000000, rho=0.408248
+2019-03-24 21:29:14,386 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,387 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,387 - INFO - PROGRESS: pass 5, at document #1/1
+2019-03-24 21:29:14,388 - DEBUG - updating topics
+2019-03-24 21:29:14,388 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,388 - INFO - topic diff=0.000000, rho=0.377964
+2019-03-24 21:29:14,389 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,390 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,390 - INFO - PROGRESS: pass 6, at document #1/1
+2019-03-24 21:29:14,392 - DEBUG - updating topics
+2019-03-24 21:29:14,392 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,392 - INFO - topic diff=0.000000, rho=0.353553
+2019-03-24 21:29:14,393 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,393 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,394 - INFO - PROGRESS: pass 7, at document #1/1
+2019-03-24 21:29:14,394 - DEBUG - updating topics
+2019-03-24 21:29:14,395 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,396 - INFO - topic diff=0.000000, rho=0.333333
+2019-03-24 21:29:14,396 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,397 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,398 - INFO - PROGRESS: pass 8, at document #1/1
+2019-03-24 21:29:14,399 - DEBUG - updating topics
+2019-03-24 21:29:14,400 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,400 - INFO - topic diff=0.000000, rho=0.316228
+2019-03-24 21:29:14,400 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,401 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,401 - INFO - PROGRESS: pass 9, at document #1/1
+2019-03-24 21:29:14,402 - DEBUG - updating topics
+2019-03-24 21:29:14,402 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,402 - INFO - topic diff=0.000000, rho=0.301511
+2019-03-24 21:29:14,402 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,403 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,404 - INFO - PROGRESS: pass 10, at document #1/1
+2019-03-24 21:29:14,404 - DEBUG - updating topics
+2019-03-24 21:29:14,405 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,405 - INFO - topic diff=0.000000, rho=0.288675
+2019-03-24 21:29:14,405 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,406 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,406 - INFO - PROGRESS: pass 11, at document #1/1
+2019-03-24 21:29:14,407 - DEBUG - updating topics
+2019-03-24 21:29:14,407 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,407 - INFO - topic diff=0.000000, rho=0.277350
+2019-03-24 21:29:14,408 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,408 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,409 - INFO - PROGRESS: pass 12, at document #1/1
+2019-03-24 21:29:14,409 - DEBUG - updating topics
+2019-03-24 21:29:14,410 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,411 - INFO - topic diff=0.000000, rho=0.267261
+2019-03-24 21:29:14,411 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,412 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,412 - INFO - PROGRESS: pass 13, at document #1/1
+2019-03-24 21:29:14,413 - DEBUG - updating topics
+2019-03-24 21:29:14,413 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,413 - INFO - topic diff=0.000000, rho=0.258199
+2019-03-24 21:29:14,414 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,414 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,414 - INFO - PROGRESS: pass 14, at document #1/1
+2019-03-24 21:29:14,415 - DEBUG - updating topics
+2019-03-24 21:29:14,415 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,415 - INFO - topic diff=0.000000, rho=0.250000
+2019-03-24 21:29:14,415 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,416 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,416 - INFO - PROGRESS: pass 15, at document #1/1
+2019-03-24 21:29:14,416 - DEBUG - updating topics
+2019-03-24 21:29:14,416 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,417 - INFO - topic diff=0.000000, rho=0.242536
+2019-03-24 21:29:14,417 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,417 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,417 - INFO - PROGRESS: pass 16, at document #1/1
+2019-03-24 21:29:14,418 - DEBUG - updating topics
+2019-03-24 21:29:14,418 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,418 - INFO - topic diff=0.000000, rho=0.235702
+2019-03-24 21:29:14,418 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,419 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,419 - INFO - PROGRESS: pass 17, at document #1/1
+2019-03-24 21:29:14,420 - DEBUG - updating topics
+2019-03-24 21:29:14,420 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,420 - INFO - topic diff=0.000000, rho=0.229416
+2019-03-24 21:29:14,421 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,421 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,421 - INFO - PROGRESS: pass 18, at document #1/1
+2019-03-24 21:29:14,422 - DEBUG - updating topics
+2019-03-24 21:29:14,422 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,422 - INFO - topic diff=0.000000, rho=0.223607
+2019-03-24 21:29:14,422 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,423 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,423 - INFO - PROGRESS: pass 19, at document #1/1
+2019-03-24 21:29:14,424 - DEBUG - updating topics
+2019-03-24 21:29:14,425 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,425 - INFO - topic diff=0.000000, rho=0.218218
+2019-03-24 21:29:14,425 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,426 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,426 - INFO - PROGRESS: pass 20, at document #1/1
+2019-03-24 21:29:14,427 - DEBUG - updating topics
+2019-03-24 21:29:14,427 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,427 - INFO - topic diff=0.000000, rho=0.213201
+2019-03-24 21:29:14,428 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,428 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,429 - INFO - PROGRESS: pass 21, at document #1/1
+2019-03-24 21:29:14,430 - DEBUG - updating topics
+2019-03-24 21:29:14,431 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,432 - INFO - topic diff=0.000000, rho=0.208514
+2019-03-24 21:29:14,433 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,434 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,434 - INFO - PROGRESS: pass 22, at document #1/1
+2019-03-24 21:29:14,434 - DEBUG - updating topics
+2019-03-24 21:29:14,435 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,435 - INFO - topic diff=0.000000, rho=0.204124
+2019-03-24 21:29:14,435 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,436 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,436 - INFO - PROGRESS: pass 23, at document #1/1
+2019-03-24 21:29:14,436 - DEBUG - updating topics
+2019-03-24 21:29:14,436 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,436 - INFO - topic diff=0.000000, rho=0.200000
+2019-03-24 21:29:14,436 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,437 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,437 - INFO - PROGRESS: pass 24, at document #1/1
+2019-03-24 21:29:14,437 - DEBUG - updating topics
+2019-03-24 21:29:14,437 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,437 - INFO - topic diff=0.000000, rho=0.196116
+2019-03-24 21:29:14,438 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,438 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,438 - INFO - PROGRESS: pass 25, at document #1/1
+2019-03-24 21:29:14,439 - DEBUG - updating topics
+2019-03-24 21:29:14,439 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,439 - INFO - topic diff=0.000000, rho=0.192450
+2019-03-24 21:29:14,439 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,439 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,440 - INFO - PROGRESS: pass 26, at document #1/1
+2019-03-24 21:29:14,440 - DEBUG - updating topics
+2019-03-24 21:29:14,440 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,440 - INFO - topic diff=0.000000, rho=0.188982
+2019-03-24 21:29:14,440 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,441 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,441 - INFO - PROGRESS: pass 27, at document #1/1
+2019-03-24 21:29:14,442 - DEBUG - updating topics
+2019-03-24 21:29:14,442 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,442 - INFO - topic diff=0.000000, rho=0.185695
+2019-03-24 21:29:14,442 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,442 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,443 - INFO - PROGRESS: pass 28, at document #1/1
+2019-03-24 21:29:14,443 - DEBUG - updating topics
+2019-03-24 21:29:14,443 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,443 - INFO - topic diff=0.000000, rho=0.182574
+2019-03-24 21:29:14,443 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,444 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,444 - INFO - PROGRESS: pass 29, at document #1/1
+2019-03-24 21:29:14,444 - DEBUG - updating topics
+2019-03-24 21:29:14,444 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,444 - INFO - topic diff=0.000000, rho=0.179605
+2019-03-24 21:29:14,444 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,445 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,445 - INFO - PROGRESS: pass 30, at document #1/1
+2019-03-24 21:29:14,445 - DEBUG - updating topics
+2019-03-24 21:29:14,446 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,446 - INFO - topic diff=0.000000, rho=0.176777
+2019-03-24 21:29:14,446 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,447 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,447 - INFO - PROGRESS: pass 31, at document #1/1
+2019-03-24 21:29:14,448 - DEBUG - updating topics
+2019-03-24 21:29:14,449 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,449 - INFO - topic diff=0.000000, rho=0.174078
+2019-03-24 21:29:14,449 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,450 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,450 - INFO - PROGRESS: pass 32, at document #1/1
+2019-03-24 21:29:14,450 - DEBUG - updating topics
+2019-03-24 21:29:14,450 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,450 - INFO - topic diff=0.000000, rho=0.171499
+2019-03-24 21:29:14,451 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,451 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,451 - INFO - PROGRESS: pass 33, at document #1/1
+2019-03-24 21:29:14,451 - DEBUG - updating topics
+2019-03-24 21:29:14,451 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,451 - INFO - topic diff=0.000000, rho=0.169031
+2019-03-24 21:29:14,452 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,452 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,452 - INFO - PROGRESS: pass 34, at document #1/1
+2019-03-24 21:29:14,452 - DEBUG - updating topics
+2019-03-24 21:29:14,452 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,452 - INFO - topic diff=0.000000, rho=0.166667
+2019-03-24 21:29:14,453 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,453 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,453 - INFO - PROGRESS: pass 35, at document #1/1
+2019-03-24 21:29:14,453 - DEBUG - updating topics
+2019-03-24 21:29:14,453 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,453 - INFO - topic diff=0.000000, rho=0.164399
+2019-03-24 21:29:14,454 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,454 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,454 - INFO - PROGRESS: pass 36, at document #1/1
+2019-03-24 21:29:14,454 - DEBUG - updating topics
+2019-03-24 21:29:14,455 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,455 - INFO - topic diff=0.000000, rho=0.162221
+2019-03-24 21:29:14,455 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,455 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,455 - INFO - PROGRESS: pass 37, at document #1/1
+2019-03-24 21:29:14,455 - DEBUG - updating topics
+2019-03-24 21:29:14,456 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,456 - INFO - topic diff=0.000000, rho=0.160128
+2019-03-24 21:29:14,456 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,456 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,456 - INFO - PROGRESS: pass 38, at document #1/1
+2019-03-24 21:29:14,456 - DEBUG - updating topics
+2019-03-24 21:29:14,457 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,457 - INFO - topic diff=0.000000, rho=0.158114
+2019-03-24 21:29:14,457 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,457 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,457 - INFO - PROGRESS: pass 39, at document #1/1
+2019-03-24 21:29:14,457 - DEBUG - updating topics
+2019-03-24 21:29:14,458 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,458 - INFO - topic diff=0.000000, rho=0.156174
+2019-03-24 21:29:14,458 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,458 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,458 - INFO - PROGRESS: pass 40, at document #1/1
+2019-03-24 21:29:14,459 - DEBUG - updating topics
+2019-03-24 21:29:14,459 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,459 - INFO - topic diff=0.000000, rho=0.154303
+2019-03-24 21:29:14,459 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,459 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,459 - INFO - PROGRESS: pass 41, at document #1/1
+2019-03-24 21:29:14,460 - DEBUG - updating topics
+2019-03-24 21:29:14,460 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,460 - INFO - topic diff=0.000000, rho=0.152499
+2019-03-24 21:29:14,460 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,460 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,460 - INFO - PROGRESS: pass 42, at document #1/1
+2019-03-24 21:29:14,461 - DEBUG - updating topics
+2019-03-24 21:29:14,461 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,461 - INFO - topic diff=0.000000, rho=0.150756
+2019-03-24 21:29:14,461 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,461 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,461 - INFO - PROGRESS: pass 43, at document #1/1
+2019-03-24 21:29:14,462 - DEBUG - updating topics
+2019-03-24 21:29:14,462 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,462 - INFO - topic diff=0.000000, rho=0.149071
+2019-03-24 21:29:14,462 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,462 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,462 - INFO - PROGRESS: pass 44, at document #1/1
+2019-03-24 21:29:14,463 - DEBUG - updating topics
+2019-03-24 21:29:14,463 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,463 - INFO - topic diff=0.000000, rho=0.147442
+2019-03-24 21:29:14,463 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,463 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,463 - INFO - PROGRESS: pass 45, at document #1/1
+2019-03-24 21:29:14,464 - DEBUG - updating topics
+2019-03-24 21:29:14,464 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,464 - INFO - topic diff=0.000000, rho=0.145865
+2019-03-24 21:29:14,464 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,464 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,464 - INFO - PROGRESS: pass 46, at document #1/1
+2019-03-24 21:29:14,464 - DEBUG - updating topics
+2019-03-24 21:29:14,465 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,465 - INFO - topic diff=0.000000, rho=0.144338
+2019-03-24 21:29:14,465 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,465 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,465 - INFO - PROGRESS: pass 47, at document #1/1
+2019-03-24 21:29:14,465 - DEBUG - updating topics
+2019-03-24 21:29:14,466 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,466 - INFO - topic diff=0.000000, rho=0.142857
+2019-03-24 21:29:14,466 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,466 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,466 - INFO - PROGRESS: pass 48, at document #1/1
+2019-03-24 21:29:14,466 - DEBUG - updating topics
+2019-03-24 21:29:14,466 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,467 - INFO - topic diff=0.000000, rho=0.141421
+2019-03-24 21:29:14,467 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,467 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,467 - INFO - PROGRESS: pass 49, at document #1/1
+2019-03-24 21:29:14,467 - DEBUG - updating topics
+2019-03-24 21:29:14,468 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,468 - INFO - topic diff=0.000000, rho=0.140028
+2019-03-24 21:29:14,468 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,468 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,468 - INFO - PROGRESS: pass 50, at document #1/1
+2019-03-24 21:29:14,468 - DEBUG - updating topics
+2019-03-24 21:29:14,469 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,469 - INFO - topic diff=0.000000, rho=0.138675
+2019-03-24 21:29:14,469 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,469 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,469 - INFO - PROGRESS: pass 51, at document #1/1
+2019-03-24 21:29:14,470 - DEBUG - updating topics
+2019-03-24 21:29:14,470 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,470 - INFO - topic diff=0.000000, rho=0.137361
+2019-03-24 21:29:14,470 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,470 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,470 - INFO - PROGRESS: pass 52, at document #1/1
+2019-03-24 21:29:14,471 - DEBUG - updating topics
+2019-03-24 21:29:14,471 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,471 - INFO - topic diff=0.000000, rho=0.136083
+2019-03-24 21:29:14,471 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,471 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,471 - INFO - PROGRESS: pass 53, at document #1/1
+2019-03-24 21:29:14,471 - DEBUG - updating topics
+2019-03-24 21:29:14,472 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,472 - INFO - topic diff=0.000000, rho=0.134840
+2019-03-24 21:29:14,472 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,472 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,472 - INFO - PROGRESS: pass 54, at document #1/1
+2019-03-24 21:29:14,472 - DEBUG - updating topics
+2019-03-24 21:29:14,473 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,473 - INFO - topic diff=0.000000, rho=0.133631
+2019-03-24 21:29:14,473 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,473 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,473 - INFO - PROGRESS: pass 55, at document #1/1
+2019-03-24 21:29:14,473 - DEBUG - updating topics
+2019-03-24 21:29:14,474 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,474 - INFO - topic diff=0.000000, rho=0.132453
+2019-03-24 21:29:14,474 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,475 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,475 - INFO - PROGRESS: pass 56, at document #1/1
+2019-03-24 21:29:14,475 - DEBUG - updating topics
+2019-03-24 21:29:14,475 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,475 - INFO - topic diff=0.000000, rho=0.131306
+2019-03-24 21:29:14,476 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,476 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,476 - INFO - PROGRESS: pass 57, at document #1/1
+2019-03-24 21:29:14,477 - DEBUG - updating topics
+2019-03-24 21:29:14,477 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,478 - INFO - topic diff=0.000000, rho=0.130189
+2019-03-24 21:29:14,478 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,478 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,478 - INFO - PROGRESS: pass 58, at document #1/1
+2019-03-24 21:29:14,478 - DEBUG - updating topics
+2019-03-24 21:29:14,478 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,479 - INFO - topic diff=0.000000, rho=0.129099
+2019-03-24 21:29:14,479 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,479 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,479 - INFO - PROGRESS: pass 59, at document #1/1
+2019-03-24 21:29:14,479 - DEBUG - updating topics
+2019-03-24 21:29:14,479 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,480 - INFO - topic diff=0.000000, rho=0.128037
+2019-03-24 21:29:14,480 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,480 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,480 - INFO - PROGRESS: pass 60, at document #1/1
+2019-03-24 21:29:14,480 - DEBUG - updating topics
+2019-03-24 21:29:14,480 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,480 - INFO - topic diff=0.000000, rho=0.127000
+2019-03-24 21:29:14,481 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,481 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,481 - INFO - PROGRESS: pass 61, at document #1/1
+2019-03-24 21:29:14,481 - DEBUG - updating topics
+2019-03-24 21:29:14,481 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,481 - INFO - topic diff=0.000000, rho=0.125988
+2019-03-24 21:29:14,482 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,482 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,482 - INFO - PROGRESS: pass 62, at document #1/1
+2019-03-24 21:29:14,482 - DEBUG - updating topics
+2019-03-24 21:29:14,482 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,482 - INFO - topic diff=0.000000, rho=0.125000
+2019-03-24 21:29:14,482 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,483 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,483 - INFO - PROGRESS: pass 63, at document #1/1
+2019-03-24 21:29:14,483 - DEBUG - updating topics
+2019-03-24 21:29:14,483 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,483 - INFO - topic diff=0.000000, rho=0.124035
+2019-03-24 21:29:14,483 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,484 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,484 - INFO - PROGRESS: pass 64, at document #1/1
+2019-03-24 21:29:14,484 - DEBUG - updating topics
+2019-03-24 21:29:14,484 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,484 - INFO - topic diff=0.000000, rho=0.123091
+2019-03-24 21:29:14,484 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,485 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,485 - INFO - PROGRESS: pass 65, at document #1/1
+2019-03-24 21:29:14,485 - DEBUG - updating topics
+2019-03-24 21:29:14,485 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,485 - INFO - topic diff=0.000000, rho=0.122169
+2019-03-24 21:29:14,485 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,486 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,486 - INFO - PROGRESS: pass 66, at document #1/1
+2019-03-24 21:29:14,486 - DEBUG - updating topics
+2019-03-24 21:29:14,486 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,486 - INFO - topic diff=0.000000, rho=0.121268
+2019-03-24 21:29:14,486 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,486 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,487 - INFO - PROGRESS: pass 67, at document #1/1
+2019-03-24 21:29:14,487 - DEBUG - updating topics
+2019-03-24 21:29:14,487 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,487 - INFO - topic diff=0.000000, rho=0.120386
+2019-03-24 21:29:14,487 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,488 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,488 - INFO - PROGRESS: pass 68, at document #1/1
+2019-03-24 21:29:14,488 - DEBUG - updating topics
+2019-03-24 21:29:14,488 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,488 - INFO - topic diff=0.000000, rho=0.119523
+2019-03-24 21:29:14,488 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,489 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,489 - INFO - PROGRESS: pass 69, at document #1/1
+2019-03-24 21:29:14,489 - DEBUG - updating topics
+2019-03-24 21:29:14,489 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,489 - INFO - topic diff=0.000000, rho=0.118678
+2019-03-24 21:29:14,489 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,490 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,490 - INFO - PROGRESS: pass 70, at document #1/1
+2019-03-24 21:29:14,490 - DEBUG - updating topics
+2019-03-24 21:29:14,491 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,491 - INFO - topic diff=0.000000, rho=0.117851
+2019-03-24 21:29:14,492 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,492 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,492 - INFO - PROGRESS: pass 71, at document #1/1
+2019-03-24 21:29:14,493 - DEBUG - updating topics
+2019-03-24 21:29:14,493 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,493 - INFO - topic diff=0.000000, rho=0.117041
+2019-03-24 21:29:14,493 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,494 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,494 - INFO - PROGRESS: pass 72, at document #1/1
+2019-03-24 21:29:14,495 - DEBUG - updating topics
+2019-03-24 21:29:14,496 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,496 - INFO - topic diff=0.000000, rho=0.116248
+2019-03-24 21:29:14,496 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,498 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,498 - INFO - PROGRESS: pass 73, at document #1/1
+2019-03-24 21:29:14,499 - DEBUG - updating topics
+2019-03-24 21:29:14,500 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,500 - INFO - topic diff=0.000000, rho=0.115470
+2019-03-24 21:29:14,500 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,500 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,501 - INFO - PROGRESS: pass 74, at document #1/1
+2019-03-24 21:29:14,501 - DEBUG - updating topics
+2019-03-24 21:29:14,501 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,502 - INFO - topic diff=0.000000, rho=0.114708
+2019-03-24 21:29:14,502 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,502 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,503 - INFO - PROGRESS: pass 75, at document #1/1
+2019-03-24 21:29:14,503 - DEBUG - updating topics
+2019-03-24 21:29:14,503 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,503 - INFO - topic diff=0.000000, rho=0.113961
+2019-03-24 21:29:14,503 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,503 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,504 - INFO - PROGRESS: pass 76, at document #1/1
+2019-03-24 21:29:14,504 - DEBUG - updating topics
+2019-03-24 21:29:14,504 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,504 - INFO - topic diff=0.000000, rho=0.113228
+2019-03-24 21:29:14,504 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,505 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,505 - INFO - PROGRESS: pass 77, at document #1/1
+2019-03-24 21:29:14,505 - DEBUG - updating topics
+2019-03-24 21:29:14,505 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,506 - INFO - topic diff=0.000000, rho=0.112509
+2019-03-24 21:29:14,506 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,506 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,506 - INFO - PROGRESS: pass 78, at document #1/1
+2019-03-24 21:29:14,506 - DEBUG - updating topics
+2019-03-24 21:29:14,507 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,507 - INFO - topic diff=0.000000, rho=0.111803
+2019-03-24 21:29:14,507 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,508 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,508 - INFO - PROGRESS: pass 79, at document #1/1
+2019-03-24 21:29:14,509 - DEBUG - updating topics
+2019-03-24 21:29:14,509 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,509 - INFO - topic diff=0.000000, rho=0.111111
+2019-03-24 21:29:14,509 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,509 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,509 - INFO - PROGRESS: pass 80, at document #1/1
+2019-03-24 21:29:14,510 - DEBUG - updating topics
+2019-03-24 21:29:14,510 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,510 - INFO - topic diff=0.000000, rho=0.110432
+2019-03-24 21:29:14,511 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,511 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,511 - INFO - PROGRESS: pass 81, at document #1/1
+2019-03-24 21:29:14,512 - DEBUG - updating topics
+2019-03-24 21:29:14,513 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,513 - INFO - topic diff=0.000000, rho=0.109764
+2019-03-24 21:29:14,514 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,515 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,515 - INFO - PROGRESS: pass 82, at document #1/1
+2019-03-24 21:29:14,516 - DEBUG - updating topics
+2019-03-24 21:29:14,516 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,516 - INFO - topic diff=0.000000, rho=0.109109
+2019-03-24 21:29:14,516 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,517 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,517 - INFO - PROGRESS: pass 83, at document #1/1
+2019-03-24 21:29:14,517 - DEBUG - updating topics
+2019-03-24 21:29:14,518 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,518 - INFO - topic diff=0.000000, rho=0.108465
+2019-03-24 21:29:14,518 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,518 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,519 - INFO - PROGRESS: pass 84, at document #1/1
+2019-03-24 21:29:14,519 - DEBUG - updating topics
+2019-03-24 21:29:14,519 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,519 - INFO - topic diff=0.000000, rho=0.107833
+2019-03-24 21:29:14,519 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,520 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,520 - INFO - PROGRESS: pass 85, at document #1/1
+2019-03-24 21:29:14,520 - DEBUG - updating topics
+2019-03-24 21:29:14,521 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,521 - INFO - topic diff=0.000000, rho=0.107211
+2019-03-24 21:29:14,521 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,522 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,522 - INFO - PROGRESS: pass 86, at document #1/1
+2019-03-24 21:29:14,522 - DEBUG - updating topics
+2019-03-24 21:29:14,523 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,523 - INFO - topic diff=0.000000, rho=0.106600
+2019-03-24 21:29:14,523 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,523 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,524 - INFO - PROGRESS: pass 87, at document #1/1
+2019-03-24 21:29:14,525 - DEBUG - updating topics
+2019-03-24 21:29:14,525 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,525 - INFO - topic diff=0.000000, rho=0.106000
+2019-03-24 21:29:14,525 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,526 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,526 - INFO - PROGRESS: pass 88, at document #1/1
+2019-03-24 21:29:14,526 - DEBUG - updating topics
+2019-03-24 21:29:14,526 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,527 - INFO - topic diff=0.000000, rho=0.105409
+2019-03-24 21:29:14,527 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,527 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,527 - INFO - PROGRESS: pass 89, at document #1/1
+2019-03-24 21:29:14,527 - DEBUG - updating topics
+2019-03-24 21:29:14,528 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,528 - INFO - topic diff=0.000000, rho=0.104828
+2019-03-24 21:29:14,528 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,528 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,528 - INFO - PROGRESS: pass 90, at document #1/1
+2019-03-24 21:29:14,528 - DEBUG - updating topics
+2019-03-24 21:29:14,528 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,529 - INFO - topic diff=0.000000, rho=0.104257
+2019-03-24 21:29:14,529 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,529 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,529 - INFO - PROGRESS: pass 91, at document #1/1
+2019-03-24 21:29:14,529 - DEBUG - updating topics
+2019-03-24 21:29:14,529 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,530 - INFO - topic diff=0.000000, rho=0.103695
+2019-03-24 21:29:14,530 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,530 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,530 - INFO - PROGRESS: pass 92, at document #1/1
+2019-03-24 21:29:14,530 - DEBUG - updating topics
+2019-03-24 21:29:14,530 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,531 - INFO - topic diff=0.000000, rho=0.103142
+2019-03-24 21:29:14,531 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,531 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,531 - INFO - PROGRESS: pass 93, at document #1/1
+2019-03-24 21:29:14,531 - DEBUG - updating topics
+2019-03-24 21:29:14,531 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,532 - INFO - topic diff=0.000000, rho=0.102598
+2019-03-24 21:29:14,532 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,532 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,532 - INFO - PROGRESS: pass 94, at document #1/1
+2019-03-24 21:29:14,532 - DEBUG - updating topics
+2019-03-24 21:29:14,533 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,533 - INFO - topic diff=0.000000, rho=0.102062
+2019-03-24 21:29:14,533 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,533 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,533 - INFO - PROGRESS: pass 95, at document #1/1
+2019-03-24 21:29:14,533 - DEBUG - updating topics
+2019-03-24 21:29:14,534 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,534 - INFO - topic diff=0.000000, rho=0.101535
+2019-03-24 21:29:14,534 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,534 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,534 - INFO - PROGRESS: pass 96, at document #1/1
+2019-03-24 21:29:14,534 - DEBUG - updating topics
+2019-03-24 21:29:14,535 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,535 - INFO - topic diff=0.000000, rho=0.101015
+2019-03-24 21:29:14,535 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,535 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,535 - INFO - PROGRESS: pass 97, at document #1/1
+2019-03-24 21:29:14,535 - DEBUG - updating topics
+2019-03-24 21:29:14,536 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,536 - INFO - topic diff=0.000000, rho=0.100504
+2019-03-24 21:29:14,536 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,536 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,536 - INFO - PROGRESS: pass 98, at document #1/1
+2019-03-24 21:29:14,536 - DEBUG - updating topics
+2019-03-24 21:29:14,537 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,537 - INFO - topic diff=0.000000, rho=0.100000
+2019-03-24 21:29:14,537 - DEBUG - bound: at document #0
+2019-03-24 21:29:14,537 - INFO - -0.896 per-word bound, 1.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+2019-03-24 21:29:14,537 - INFO - PROGRESS: pass 99, at document #1/1
+2019-03-24 21:29:14,537 - DEBUG - updating topics
+2019-03-24 21:29:14,538 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,538 - INFO - topic diff=0.000000, rho=0.099504
+2019-03-24 21:29:14,538 - INFO - topic #0 (1.000): 0.500*"fbfh" + 0.500*"xcdgedg"
+2019-03-24 21:29:14,566 - INFO - 127.0.0.1 - - [24/Mar/2019 21:29:14] "POST /tmodelOut HTTP/1.1" 200 -
