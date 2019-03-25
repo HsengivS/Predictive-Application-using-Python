@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extracted Topics</title>
+  </head>
+  <body>
+    <div class="container">
+        <h2>Extracted Topics</h2>
+          <table class="table">
+            {% if message %}
+              <p> you entered correct </p>
+            {% endif %}
+            <thead>
+              <tr>
+        <th>LABELS</th>
+        <th>TEXT</th>
+      </tr>
+            </thead>
+            <tbody>
+             {% for key, value in result.items() %}
+                <tr class="success">
+                   <td> {{ key }} </td>
+                   <td> {{ value }} </td>
+                </tr>
+             {% endfor %}
+           </tbody>
+          </table>
+          <!-- **************************************** -->
+          <br>
+          <p><strong> NOTE: If the number of topics is larger than the text word count, then by default the topics value will be 10.</strong> </p>
+          <br>
+    </div>
+  </body>
+  </body>
+</html>

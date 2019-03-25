@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>any text NER output</title>
+    <style>
+    body, html {
+        height: 100%;
+        margin: 0;
+      }
+    .bg {
+        /* The image used */
+        /* background-color: url_for(); */
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    </style>
+  </head>
+    <div class="bg">
+      <body>
+        <div class="container">
+            <h2>Extracted Entities</h2>
+              <table class="table">
+                <thead>
+                  <tr>
+            <th>LABELS</th>
+            <th>TEXT</th>
+          </tr>
+                </thead>
+                <tbody>
+                 {% for key, value in result.items() %}
+                    <tr class="success">
+                       <td> {{ key }} </td>
+                       <td> {{ value }} </td>
+                    </tr>
+                 {% endfor %}
+               </tbody>
+              </table>
+              <!-- **************************************** -->
+              <br>
+              <br>
+              <h2>    Reference</h2>
+              <table class="table">
+                <thead>
+                  <tr>
+            <th>LABELS TYPE</th>
+            <th>LABEL DESCRIPTION</th>
+          </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>PERSON</td>
+                    <td>People, including fictional.</td>
+                  </tr>
+                  <tr>
+                    <td>NORP</td>
+                    <td>Nationalities or religious or political groups.</td>
+                  </tr>
+                  <tr>
+                    <td>FAC</td>
+                    <td>Buildings, airports, highways, bridges, etc.</td>
+                  </tr>
+                  <tr>
+                    <td>ORG</td>
+                    <td>Companies, agencies, institutions, etc.</td>
+                  </tr>
+                  <tr>
+                    <td>GPE</td>
+                    <td>Countries, cities, states.</td>
+                  </tr>
+                  <tr>
+                    <td>LOC</td>
+                    <td>Non-GPE locations, mountain ranges, bodies of water.</td>
+                  </tr>
+                  <tr>
+                    <td>PRODUCT</td>
+                    <td>Objects, vehicles, foods, etc. (Not services.)</td>
+                  </tr>
+                  <tr>
+                    <td>WORK_OF_ART</td>
+                    <td>Titles of books, songs, etc.</td>
+                  </tr>
+                  <tr>
+                    <td>LAW</td>
+                    <td>Named documents made into laws.</td>
+                  </tr>
+                  <tr>
+                    <td>LANGUAGE</td>
+                    <td>Any named language.</td>
+                  </tr>
+                  <tr>
+                    <td>DATE</td>
+                    <td>Absolute or relative dates or periods.</td>
+                  </tr>
+                  <tr>
+                    <td>TIME</td>
+                    <td>Times smaller than a day.</td>
+                  </tr>
+                  <tr>
+                    <td>PERCENT</td>
+                    <td>Percentage, including "%".</td>
+                  </tr>
+                  <tr>
+                    <td>MONEY</td>
+                    <td>Monetary values, including unit.</td>
+                  </tr>
+                  <tr>
+                    <td>QUANTITY</td>
+                    <td>Measurements, as of weight or distance.</td>
+                  </tr>
+                  <tr>
+                    <td>ORDINAL</td>
+                    <td>"first", "second", etc.</td>
+                  </tr>
+                  <tr>
+                    <td>CARDINAL</td>
+                    <td>Numerals that do not fall under another type.</td>
+                  </tr>
+
+               </tbody>
+              </table>
+        </div>
+      </body>
+
+    </div>
+</html>

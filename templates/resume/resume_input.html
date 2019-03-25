@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}"> -->
+    <link rel="stylesheet" href="static/css/master.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NER for resume</title>
+    <style>
+    body, html {
+        height: 100%;
+        margin: 0;
+      }
+    .bg {
+        /* The image used */
+        background-image: url("https://www.bregenzerwald.at/wp-content/uploads/2017/07/DSCN3202-Blick-auf-Au-Stra-1920x800.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    </style>
+  </head>
+    <div class="bg">
+      <body class='bg-primary text-green'>
+      <div class="container">
+              <h1>Extract information from resume</h1>
+            </div>
+            <br>
+        <div class="container">
+          <div class="jumbotron">
+            <form class="" action="/rmodelOut" method="post">
+              <textarea class="form-control" name="sample_text" rows="12" cols="125" placeholder="Enter or Copy and paste resume text to extract the entities" required></textarea>
+              <br>
+              <br>
+              <!-- <input class="btn btn-primary btn-block btn-lg" type="submit" name="" value="predict"> -->
+              <button type="reset" class="btn btn-primary"><i class="fa fa-eraser"></i> Clear</button>
+              <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+            </form>
+              <br>
+              <br>
+              <br>
+          </div>
+        </div>
+
+      </body>
+
+    </div>
+</html>
