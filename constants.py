@@ -1,4 +1,4 @@
-CONNECTION_STRING = 'mongodb+srv://Vignesh:2wuMXrzpAhiDk1D7@cluster0-kbolu.mongodb.net/PROJECTS?retryWrites=true'
+CONNECTION_STRING = ' < CONNECTION STRING > '
 
 PHONE_NUMBER_PATTERN2 = r'\+[-()\s\d]+?(?=\s*[+<])'
 PHONE_NUMBER_PATTERN1 = r'[\+\(]?[1-9][0-9 .\-\(\)]{8,}[0-9]'
