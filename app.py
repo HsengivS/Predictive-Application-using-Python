@@ -7,7 +7,6 @@ from ner import get_spacy_ner, get_resume_ner, nlp_spacy, nlp_resume
 from topic_modelling import get_topic_modelling
 from logging_utils import setup_logging_to_file, log_exception
 import logging
-# import bcrypt
 
 app = Flask(__name__)
 app.secret_key = 'random string'

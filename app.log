@@ -1,2 +1,3 @@
-2019-03-25 22:55:32,254 - WARNING -  * Debugger is active!
-2019-03-25 22:55:32,254 - INFO -  * Debugger PIN: 292-018-952
+2019-03-30 01:43:37,273 - WARNING -  * Debugger is active!
+2019-03-30 01:43:37,274 - INFO -  * Debugger PIN: 108-194-643
+2019-03-30 01:43:54,661 - INFO - 127.0.0.1 - - [30/Mar/2019 01:43:54] "POST /rmodelOut HTTP/1.1" 200 -
